@@ -1,9 +1,9 @@
 function Footer() {
   return (
     <>
-    <footer>
-        <h1>Footer</h1>
-        </footer>
+      <footer>
+        <span>@gautam-4</span>&nbsp;&nbsp;&nbsp;&nbsp; <span>copyright &copy; {new Date().getFullYear()}</span>
+      </footer>
     </>
   )
 }

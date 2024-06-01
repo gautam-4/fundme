@@ -1,6 +1,8 @@
 # FundMe Project
 
-This is my own version of the web3.0 FundMe project. This project allows users to fund the contract and send a message along with their transaction. The frontend interface displays all the transactions along with the messages.
+This is my take on the web3.0 FundMe project. This project allows users to fund the contract and send a message along with their transaction. The frontend interface displays all the transactions along with the messages.
+
+![](./client/Screenshot.png)
 
 ## Features
 

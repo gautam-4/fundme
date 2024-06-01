@@ -1,5 +1,91 @@
-.ethCard{
-    height: 200px;
-    width: 380px;
-    background-color: white;
+.fundSection {
+  margin: 40px 0;
+}
+
+.fundSection>h1 {
+  font-size: 40px;
+}
+
+.fundSection>div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 40px;
+  flex-wrap: wrap;
+}
+
+.ethCard {
+  height: 200px;
+  width: 380px;
+  background-color: white;
+  background: rgb(200, 200, 200);
+  background: linear-gradient(225deg, rgba(200, 200, 200, 1) 0%, rgba(139, 139, 139, 1) 35%, rgba(65, 65, 65, 1) 99%);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 16px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(255, 255, 255, 0.525);
+}
+
+.ethCard-icon{
+  position: absolute;
+  bottom: 50px;
+  left: 15px;
+  font-size: 29px;
+}
+
+.ethCard-address{
+  position: absolute;
+  bottom: 15px;
+}
+
+.ethCard-logo{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.fundSection-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fundSection-form input {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.327);
+  padding-left: 8px;
+  border-radius: 5px;
+  height: 42px;
+  width: 200px;
+  color: white;
+}
+
+.fundSection-form button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  border: 0;
+  height: 35px;
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.fundSection-form button:hover {
+  background-color: #006adc;
+}
+.fundSection-form button:disabled{
+  background-color: #1e2c3b;
+}
+
+@media (max-width: 720px){
+  .ethCard{
+    display: none;
   }
+}

@@ -1,0 +1,29 @@
+.fundHistory>h1{
+    margin: 10px 0;
+}
+
+.fundHistory-container{
+    overflow-x: scroll;
+}
+
+.fundHistory-headings th{
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid white;
+    padding: 4px 80px;
+}
+
+.fundHistory-data>td{
+    padding: 2px 0;
+    font-size: 18px;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+@media screen and (min-width: 1020px){
+    .fundHistory-container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
