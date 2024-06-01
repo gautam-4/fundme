@@ -1,11 +1,11 @@
-import {Header, Footer, Transactions, Fund} from './components'
+import {Header, Footer, Fund, FundHistory} from './components'
 
 function App() {
   return (
     <>
       <Header/>
       <Fund/>
-      <Transactions/>
+      <FundHistory/>
       <Footer/>
     </>
   )

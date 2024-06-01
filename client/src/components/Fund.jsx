@@ -1,6 +1,9 @@
 import '../styles/fund.css'
+import { useContext } from 'react';
+import { FundMeContext } from '../context/FundMeContext';
 
 function Fund() {
+  const {fundCount, connectWallet,fundHistory,currentAccount,isLoading,sendFund,handleChange,formData} = useContext(FundMeContext);
   return (
     <>
       <h1>Transfer funds instantly</h1>
@@ -9,7 +12,7 @@ function Fund() {
           <input type="number" onChange={() => { }} placeholder="Amount" step='0.0001'/> <br />
           <input type="text" onChange={() => { }} placeholder="Message" />
           <br />
-          <button>Connect Wallet</button>
+          <button onClick={connectWallet}>Connect Wallet</button>
         </div>
 
         <div className="ethCard">
