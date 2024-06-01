@@ -36,6 +36,7 @@ export const FundMeProvider = ({ children }) => {
                     addressFrom: fund.From,
                     amount: ethers.utils.formatEther(fund.amount._hex),
                     message: fund.message,
+                    timestamp: new Date(fund.timestamp.toNumber() * 1000).toLocaleString(),
                 }));
 
                 setFundHistory(structuredFundHistory);
@@ -95,6 +96,7 @@ export const FundMeProvider = ({ children }) => {
             await transactionHash.wait();
             console.log(`Success - ${transactionHash.hash}`);
             setIsLoading(false);
+            getAllFunds();
 
             const newFundCount = await fundMeContract.getFundCount();
             setFundCount(newFundCount.toNumber());

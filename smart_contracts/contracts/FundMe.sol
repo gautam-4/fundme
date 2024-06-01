@@ -9,8 +9,9 @@ contract FundMe{
 
     struct FundStruct{
         address From;
-        uint amount;
+        uint256 amount;
         string message;
+        uint256 timestamp;
     }
 
     FundStruct[] listOfFunds;
@@ -27,7 +28,7 @@ contract FundMe{
     function fundFunction (string memory message) public payable {
         require(msg.value > 0);
         fundCount += 1;
-        listOfFunds.push(FundStruct(msg.sender, msg.value, message));
+        listOfFunds.push(FundStruct(msg.sender, msg.value, message, block.timestamp));
 
         emit FundEvent(msg.sender, msg.value, message);
     }
