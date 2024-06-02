@@ -19,7 +19,7 @@ function FundHistory() {
           </tr>
         {fundHistory.length ?
           (
-            fundHistory.reverse().map((fund, index) => (
+            [...fundHistory].reverse().map((fund, index) => (
               <tr key={index} className="fundHistory-data">
                 <td>{fund.addressFrom.slice(0, 5)}...{fund.addressFrom.slice(-5)}</td>
                 <td>{fund.timestamp}</td>
