@@ -1,13 +1,13 @@
 # FundMe Project
 
-This is my take on the web3.0 FundMe project. This project allows users to fund the contract and send a message along with their transaction. The frontend interface displays all the transactions along with the messages.
+This project is my implementation of the web3.0 FundMe project. It features a frontend interface that allows users to interact with a smart contract by funding it and sending a message along with their transaction. The interface then displays all the transactions along with the messages.
 
 ![](./client/Screenshot.png)
 
 ## Features
 
-- **Fund the Contract**: Users can send Ether to the contract and attach a message with their transaction.
-- **View Transactions**: All transactions are listed displaying the amount, sender, and the message.
+- **Fund the Contract**: Users can send Ether to the smart contract and attach a message with their transaction.
+- **View Transactions**: All transactions are listed displaying the sender, timestamp, message and the amount.
 
 ## Technologies Used
 
