@@ -36,12 +36,12 @@ button {
   width: 0px;
 }
 
+
 footer{
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  padding-top: 24px;
   font-size: 11px;
+  position: absolute;
+  right: 0;
 }
 footer>*{
   padding: 5px;

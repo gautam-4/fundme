@@ -25,7 +25,7 @@ This project is my implementation of the web3.0 FundMe project. It features a fr
 
 2. **Navigate to frontend:**
    ```bash
-   cd frontend
+   cd client
    
 3. **Install dependencies and run the frontend:**
    ```bash
