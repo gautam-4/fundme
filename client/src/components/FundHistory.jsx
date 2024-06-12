@@ -23,7 +23,9 @@ function FundHistory() {
               <tr key={index} className="fundHistory-data">
                 <td>{fund.addressFrom.slice(0, 5)}...{fund.addressFrom.slice(-5)}</td>
                 <td>{fund.timestamp}</td>
-                <td>{fund.message}</td>
+                <td>
+                  {(fund.message).length > 40 ? (fund.message).slice(0,40) + '...' : fund.message}
+                </td>
                 <td>{fund.amount}</td>
               </tr>
             ))
